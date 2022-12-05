@@ -7,17 +7,9 @@
 <!-- Project's Readme Header -->
 # NodeJS API Project
 <div align="center">
-    <a href="https://github.com/Whiletruend/NodeJS_Project_BIN2"
-        <img src="https://i.ibb.co/jrqz45Y/NodeJS.png" alt="NodeJS Logo" width="80" height="80"/>
-    </a>
-
-    <a href="https://github.com/Whiletruend/NodeJS_Project_BIN2"
-        <img src="https://i.ibb.co/m4QwyCM/Sequelize.png" alt="Sequelize Logo" width="80" height="80"/>
-    </a>
-
-    <a href="https://github.com/Whiletruend/NodeJS_Project_BIN2"
-        <img src="https://i.ibb.co/rdNn0Lw/JWT.png" alt="JWT Logo" width="80" height="80"/>
-    </a>
+    <img src="https://i.ibb.co/jrqz45Y/NodeJS.png" alt="NodeJS Logo" width="80" height="80">
+    <img src="https://i.ibb.co/m4QwyCM/Sequelize.png" alt="Sequelize Logo" width="80" height="80"/>
+	<img src="https://i.ibb.co/rdNn0Lw/JWT.png" alt="JWT Logo" width="80" height="80"/>
 </div>
 
 <!-- Project's Readme Body -->
