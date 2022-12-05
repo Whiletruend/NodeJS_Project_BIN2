@@ -5,8 +5,8 @@
 [![Version][version-badge]][version-wlink]
 
 <!-- Project's Readme Header -->
-<div align="center" markdown="1">
-    # NodeJS API Project
+# NodeJS API Project
+<div align="center">
     <img src="https://i.ibb.co/jrqz45Y/NodeJS.png" alt="NodeJS Logo" width="80" height="80">
     <img src="https://i.ibb.co/m4QwyCM/Sequelize.png" alt="Sequelize Logo" width="80" height="80"/>
 	<img src="https://i.ibb.co/rdNn0Lw/JWT.png" alt="JWT Logo" width="80" height="80"/>
