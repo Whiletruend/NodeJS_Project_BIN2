@@ -26,8 +26,6 @@
 ## **Description du projet**
 Le projet donné lors de notre deuxième année au sein de l'**ESILV** était de trouver une idée d'**API** *(**A**pplication **P**rogramming **I**nterface)* qui serait alors utilisée. L'objectif final de cela est de nous permettre de travailler en utilisant diverses technologiques telles que **Sequelize**, **NPM** ou bien encore le système d'authentification **JWT**.
 
-<br>
-
 ## **Technologies utilisées**
 Trois principales technologies seront utilisées pour ce projet, en voici la liste:
 - **NodeJS**, avec utilisation de **ExpressJS** ;
@@ -37,8 +35,6 @@ Trois principales technologies seront utilisées pour ce projet, en voici la lis
 - **JWT** *(**J**son **W**eb **T**oken)*, pour un système de preuve *(d'authentification)* sécurisé avec les normes récentes ;
   
 - **NPM** pour l'installation de ces packages, etc.
-
-<br>
 
 ## **Notre idée de projet**
 Pour finir, notre projet se portera sur le thème d'un API permettant de: ***projet encore en recherche***.
