@@ -39,7 +39,6 @@ Pour cela, nous avons organisé un espace de travail. Nous avons donc créer une
 <hr>
 
 <br>
-<br>
 
 <hr>
 
