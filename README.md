@@ -28,11 +28,8 @@ Le projet donné lors de notre deuxième année au sein de l'**ESILV** était de
 ## **Technologies utilisées**
 Trois principales technologies seront utilisées pour ce projet, en voici la liste:
 - **NodeJS**, avec utilisation de **ExpressJS** ;
-  
 - **Sequelize**, qui est un **ORM** nous permettant de "mapper" les classes métier avec les tables en **JavaScript**. Grâce à ce système, nous pourront évidemment nous connecter à ces bases de données ;
-  
 - **JWT** *(**J**son **W**eb **T**oken)*, pour un système de preuve *(d'authentification)* sécurisé avec les normes récentes ;
-  
 - **NPM** pour l'installation de ces packages, etc.
 
 ## **Notre idée de projet**
