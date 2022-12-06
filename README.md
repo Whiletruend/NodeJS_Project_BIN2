@@ -20,7 +20,6 @@
 </div>
 
 <br>
-<br>
 
 <!-- Project's Part 01 Body -->
 ## **Description du projet**
