@@ -12,7 +12,7 @@
     width="80" height="80"/> 
     <img src="https://i.ibb.co/rdNn0Lw/JWT.png" alt="JWT Logo" width="80" height="80"/> 
     <img src="https://i.ibb.co/cvHw3dy/NPM.png" alt="JWT Logo" width="165" height="80"/>
-    <img src="https://dashboard.snapcraft.io/site_media/appmedia/2019/12/ezgif.com-gif-maker.png" alt="Space Logo" width="95" height="95">
+    <img src="https://dashboard.snapcraft.io/site_media/appmedia/2019/12/ezgif.com-gif-maker.png" alt="Space Logo" width="80" height="80">
 </div>
 
 <br>
