@@ -7,8 +7,6 @@
 <br>
 
 <!-- Project's Part 01 Header -->
-<hr>
-
 # 👋 **NodeJS API Project**
 <div align="center">
     <img src="https://i.ibb.co/jrqz45Y/NodeJS.png" alt="NodeJS Logo" width="80" height="80"> 
@@ -39,8 +37,6 @@ Pour cela, nous avons organisé un espace de travail. Nous avons donc créer une
 <hr>
 
 <br>
-
-<hr>
 
 # 💻 **Comment installer le projet**
 
