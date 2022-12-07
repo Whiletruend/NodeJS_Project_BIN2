@@ -4,8 +4,6 @@
 [![License][license-badge]][license-wlink]
 [![Version][version-badge]][version-wlink]
 
-<br>
-
 <!-- Project's Part 01 Header -->
 # 👋 **NodeJS API Project**
 <div align="center">
@@ -43,7 +41,6 @@ Pour cela, nous avons organisé un espace de travail. Nous avons donc créer une
 ## **Lorem Ipsum**
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur semper sit amet ligula at dapibus. Vestibulum non massa volutpat, consequat nibh et, bibendum eros. Donec ultricies est nulla, ut malesuada nunc vulputate eu. Fusce elementum lobortis nisl, a interdum magna sodales ac. Quisque eget lorem at sapien convallis vehicula id vel turpis. Vestibulum quis suscipit velit, in euismod sem. Fusce vehicula iaculis consectetur. Vivamus porta blandit lectus, eget tempor elit fringilla elementum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec cursus risus nec nisl bibendum, a vestibulum orci condimentum. Vivamus dignissim a velit eget aliquam. Integer ac quam non dui luctus aliquam id at nisl.
 <hr>
-<br>
 
 <!-- Markdown Badges Variables -->
 [contributors-badge]: https://img.shields.io/github/contributors/Whiletruend/NodeJS_Project_BIN2.svg?style=for-the-badge
