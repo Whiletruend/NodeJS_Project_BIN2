@@ -1,7 +1,15 @@
+// Requires
 const { Model, DataTypes } = require("sequelize");
 const db_conn = require("./database");
 const bcrypt = require("bcryptjs");
+
+// Variables
 const table_name = "user";
+
+/*
+    Object: User
+    Data(s): firstname, lastname, password, is_admin, phone_number
+*/
 class User extends Model {}
 
 User.init(
@@ -36,9 +44,12 @@ User.init(
     }
 );
 
+// Fonction hash password
 function hashPassword(user) {
     user.password = bcrypt.hashSync(user.password, bcrypt.genSaltSync());
 }
+
+// Hooks
 
 User.addHook("beforeCreate", hashPassword);
 User.addHook("beforeUpdate", (user, { fields }) => {
@@ -47,4 +58,5 @@ User.addHook("beforeUpdate", (user, { fields }) => {
     }
 });
 
+// Export
 module.exports = User;
