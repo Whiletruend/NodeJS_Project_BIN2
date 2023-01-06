@@ -1,5 +1,41 @@
+// GET METHOD(S)
+###
 GET http://localhost:3000/
 ###
 GET http://localhost:3000/recipe
 ###
 GET http://localhost:3000/recipe/1
+###
+GET http://localhost:3000/recipes
+
+
+// POST METHOD(S)
+###
+POST http://localhost:3000/recipe
+Content-Type: application/json
+
+{
+  "name": "Sandwich Jambon-Beurre",
+  "difficulty": 1,
+  "ingredients": "Baguette ou pain, beurre demi-sel, jambon (avec ou sans couenne).",
+  "preparation_time": 5,
+  "cooking_time": 0,
+  "note": 5
+}
+###
+
+// PUT METHOD(S)
+###
+PUT http://localhost:3000/recipe/6
+Content-Type: application/json
+
+{
+  "name": "Sandwich jambon-beurre",
+  "difficulty": 2,
+  "ingredients": "Baguette ou pain, beurre demi-sel ou sans, jambon (avec ou sans couenne)."
+}
+###
+
+// DELETE METHOD(S)
+###
+DELETE http://localhost:3000/recipe/5

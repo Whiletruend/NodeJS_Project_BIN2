@@ -4,7 +4,6 @@ const db_conn = require("./database");
 
 // Variable(s)
 const table_name = "recipe"; // Replace with the current needed table
-const exclude_col = ['createdAt', 'updatedAt']; // Don't touch
 
 /*
     Object: Recipe
@@ -14,12 +13,6 @@ class Recipe extends Model {}
 
 Recipe.init(
     {
-        id: {
-            type: DataTypes.INTEGER,
-            allowNull: false,
-            unique: true,
-            primaryKey: true,
-        },
         name: {
             type: DataTypes.STRING,
             allowNull: false,
@@ -39,11 +32,6 @@ Recipe.init(
     {
         sequelize: db_conn,
         tableName: table_name,
-        defaultScope: {
-            attributes: {
-                exclude: exclude_col
-            },
-        },
     }
 );
 
