@@ -12,6 +12,15 @@ create table nodejs_api.recipe
     note             int          not null
 );
 
+-- Insert to fill the recipe table :
+insert into nodejs_api.recipe (id, name, difficulty, ingredients, preparation_time, cooking_time, note)
+values  (1, 'Soupe aux légumes', 1, '1 litre de bouillon de légumes, 1 carotte, 1 courgette, 1 poivron, 1 oignon, sel, poivre', 10, 20, 4),
+        (2, 'Tarte aux pommes', 3, 'Pâte brisée, 6 pommes, 30g de beurre, 60g de sucre, 1 oeuf, cannelle', 20, 40, 5),
+        (3, 'Poulet aux champignons', 2, '4 blancs de poulet, 250g de champignons, 1 oignon, huile d''olive, sel, poivre, persil', 10, 20, 4),
+        (4, 'Gratin dauphinois', 2, '500g de pommes de terre, 20cl de lait, 1 gousse d''ail, sel, poivre, fromage râpé', 15, 45, 5),
+        (5, 'Omelette aux tomates', 1, '2 oeufs, 2 tomates, sel, poivre', 5, 10, 4);
+
+
 -- Table to manage the user accounts.
 create table nodejs_api.user
 (
