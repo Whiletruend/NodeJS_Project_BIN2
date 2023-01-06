@@ -37,7 +37,7 @@ create table nodejs_api.user
         unique (phone_number)
 );
 
---Insert de la table user :
+-- Insert de la table user :
 
 insert into nodejs_api.user (id, last_name, first_name, is_admin, email, password, phone_number)
 values  (1, 'Bongage', 'Benjamin', 1, 'benjamin.bongage@edu.devinci.fr', 'bbongage', '0636353241'),
