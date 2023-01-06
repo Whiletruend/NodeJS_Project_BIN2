@@ -4,19 +4,15 @@
 [![License][license-badge]][license-wlink]
 [![Version][version-badge]][version-wlink]
 
-<br>
-
 <!-- Project's Part 01 Header -->
-<hr>
-
 # 👋 **NodeJS API Project**
 <div align="center">
     <img src="https://i.ibb.co/jrqz45Y/NodeJS.png" alt="NodeJS Logo" width="80" height="80"> 
     <img src="https://i.ibb.co/m4QwyCM/Sequelize.png" alt="Sequelize Logo" 
     width="80" height="80"/> 
     <img src="https://i.ibb.co/rdNn0Lw/JWT.png" alt="JWT Logo" width="80" height="80"/> 
-    <img src="https://i.ibb.co/cvHw3dy/NPM.png" alt="JWT Logo" width="165" height="80"/>
-    <img src="https://i.ibb.co/bXBttxy/Space.png" alt="Space Logo" width="95" height="95">
+    <img src="https://i.ibb.co/cvHw3dy/NPM.png" alt="JWT Logo" width="165" height="80"/> 
+    <img src="https://dashboard.snapcraft.io/site_media/appmedia/2019/12/ezgif.com-gif-maker.png" alt="Space Logo" width="80" height="80">
 </div>
 
 <br>
@@ -39,16 +35,12 @@ Pour cela, nous avons organisé un espace de travail. Nous avons donc créer une
 <hr>
 
 <br>
-<br>
-
-<hr>
 
 # 💻 **Comment installer le projet**
 
 ## **Lorem Ipsum**
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur semper sit amet ligula at dapibus. Vestibulum non massa volutpat, consequat nibh et, bibendum eros. Donec ultricies est nulla, ut malesuada nunc vulputate eu. Fusce elementum lobortis nisl, a interdum magna sodales ac. Quisque eget lorem at sapien convallis vehicula id vel turpis. Vestibulum quis suscipit velit, in euismod sem. Fusce vehicula iaculis consectetur. Vivamus porta blandit lectus, eget tempor elit fringilla elementum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec cursus risus nec nisl bibendum, a vestibulum orci condimentum. Vivamus dignissim a velit eget aliquam. Integer ac quam non dui luctus aliquam id at nisl.
 <hr>
-<br>
 
 <!-- Markdown Badges Variables -->
 [contributors-badge]: https://img.shields.io/github/contributors/Whiletruend/NodeJS_Project_BIN2.svg?style=for-the-badge
