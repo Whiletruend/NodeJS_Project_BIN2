@@ -1,6 +1,7 @@
 // Require(s)
 const express = require("express");
 const recipe_Route = require("./routes/recipe");
+const user_Route = require("./routes/user");
 require("./models/database");
 
 // Variable(s)
@@ -11,6 +12,7 @@ const app = express();
 app.use(express.json());
 
 app.use(recipe_Route);
+app.use(user_Route);
 
 app.get("/", function (req, res) {
     res.send("Bienvenue sur RecettesDuMonde !");
