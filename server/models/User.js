@@ -1,7 +1,7 @@
 const { Model, DataTypes } = require("sequelize");
-const connection = require("./db");
+const db_conn = require("./database");
 const bcrypt = require("bcryptjs");
-
+const table_name = "user";
 class User extends Model {}
 
 User.init(
@@ -31,7 +31,8 @@ User.init(
         phone_number: DataTypes.STRING,
     },
     {
-        sequelize: connection,
+        sequelize: db_conn,
+        tableName: table_name,
     }
 );
 
