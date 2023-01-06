@@ -1,9 +1,10 @@
 // Variable(s)
-const { models } = require("./models");
+const { connection } = require("./models");
 
 // Migrate
-models.sync({
-    alter: true,
-})
-.then(() => console.log("DB Migrated"))
-.then(() => models.close());
+connection
+    .sync({
+        alter: true,
+    })
+    .then(() => console.log("DB Migrated"))
+    .then(() => models.close())
