@@ -2,7 +2,7 @@
 const { Router } = require("express");
 const { Recipe } = require("../models");
 const router = new Router(); // Create the object "router"
-const route_path = "/recipe" // Which route it'll be
+const route_path = "/recipe"; // Which route it'll be
 
 /*
     Purpose: Get & show the page from the route "recipe"
