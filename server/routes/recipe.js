@@ -5,7 +5,7 @@ const router = new Router(); // Create the object "router"
 const route_path = "/recipe"; // Which route it'll be
 
 /*
-    Purpose: Get & show the page from the route "recipe"
+    Purpose: Get & show the page of the concerned route_path
     Method: GET
 */
 router.get(route_path, (req, res) => {
