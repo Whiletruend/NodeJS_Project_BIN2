@@ -10,9 +10,14 @@ module.exports = function(options = {}){
         if(!Authorization){
             return res.sendStatus(401);
         }
-
+        const [type, token] = Authorization.split(" ");
+        if (type !== "Bearer"){
+            return res.sendStatus(401);
+        }
         try {
-            
+            const user = jwt.verify(token, SECRET);
+            req.user = user;
+            next();
         }catch(error){
             console.log(error);
             res.sendStatus(401);
