@@ -23,14 +23,14 @@ router.post(route_path, async (req, res) => {
 
     // Condition(s)
     // If the user do not exist (not found by the email)
-    if(!user){
+    if(!user) {
         res.sendStatus(401);
     } else if (bcrypt.compareSync(req.body.password, user.password)) {
         res.json({
             token: jwt.sign(
                 {
-                    last_name: user.last_name,
-                    first_name: user.first_name,
+                    lastname: user.last_name,
+                    firstname: user.first_name,
                     is_admin: user.is_admin,
                     id: user.id,
                 },

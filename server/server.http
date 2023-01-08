@@ -4,6 +4,55 @@ GET http://localhost:3000/
 
 
 
+// USER PART :
+// GET METHOD(S)
+###
+GET http://localhost:3000/recipe
+###
+GET http://localhost:3000/user/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsYXN0bmFtZSI6InVzZXIiLCJmaXJzdG5hbWUiOiJuYW1lIiwiaXNfYWRtaW4iOjEsImlkIjoxOSwiaWF0IjoxNjczMjAxODMyfQ.XfxIkwiPvKepreIZKbHiogvXt3mi4S2gM5WT26HvkSE
+###
+GET http://localhost:3000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsYXN0bmFtZSI6InVzZXIiLCJmaXJzdG5hbWUiOiJuYW1lIiwiaXNfYWRtaW4iOjEsImlkIjoxOSwiaWF0IjoxNjczMjAxODMyfQ.XfxIkwiPvKepreIZKbHiogvXt3mi4S2gM5WT26HvkSE
+###
+// POST METHOD(S)
+POST http://localhost:3000/user
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsYXN0bmFtZSI6InVzZXIiLCJmaXJzdG5hbWUiOiJuYW1lIiwiaXNfYWRtaW4iOjEsImlkIjoxOSwiaWF0IjoxNjczMjAxODMyfQ.XfxIkwiPvKepreIZKbHiogvXt3mi4S2gM5WT26HvkSE
+Content-Type: application/json
+
+{
+  "last_name": "User",
+  "first_name": "Name",
+  "is_admin": 1,
+  "email": "user.name@edu.devinci.fr",
+  "password": "user_pass",
+  "phone_number": "0606060606"
+}
+###
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+  "email": "user.name@edu.devinci.fr",
+  "password": "user_pass"
+}
+###
+// PUT METHOD(S)
+PUT http://localhost:3000/user/19
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsYXN0bmFtZSI6InVzZXIiLCJmaXJzdG5hbWUiOiJuYW1lIiwiaXNfYWRtaW4iOjEsImlkIjoxOSwiaWF0IjoxNjczMjAxODMyfQ.XfxIkwiPvKepreIZKbHiogvXt3mi4S2gM5WT26HvkSE
+Content-Type: application/json
+
+{
+  "phone_number": "0707070707"
+}
+###
+// DELETE METHOD(S)
+DELETE http://localhost:3000/user/19
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsYXN0bmFtZSI6InVzZXIiLCJmaXJzdG5hbWUiOiJuYW1lIiwiaXNfYWRtaW4iOjEsImlkIjoxOSwiaWF0IjoxNjczMjAxODMyfQ.XfxIkwiPvKepreIZKbHiogvXt3mi4S2gM5WT26HvkSE
+###
+
+
+
 // RECIPE PART :
 // GET METHOD(S)
 ###
@@ -16,6 +65,7 @@ GET http://localhost:3000/recipes
 // POST METHOD(S)
 ###
 POST http://localhost:3000/recipe
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsYXN0bmFtZSI6InVzZXIiLCJmaXJzdG5hbWUiOiJuYW1lIiwiaXNfYWRtaW4iOjEsImlkIjoxOSwiaWF0IjoxNjczMjAxODMyfQ.XfxIkwiPvKepreIZKbHiogvXt3mi4S2gM5WT26HvkSE
 Content-Type: application/json
 
 {
@@ -30,6 +80,7 @@ Content-Type: application/json
 // PUT METHOD(S)
 ###
 PUT http://localhost:3000/recipe/6
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsYXN0bmFtZSI6InVzZXIiLCJmaXJzdG5hbWUiOiJuYW1lIiwiaXNfYWRtaW4iOjEsImlkIjoxOSwiaWF0IjoxNjczMjAxODMyfQ.XfxIkwiPvKepreIZKbHiogvXt3mi4S2gM5WT26HvkSE
 Content-Type: application/json
 
 {
@@ -41,28 +92,4 @@ Content-Type: application/json
 // DELETE METHOD(S)
 ###
 DELETE http://localhost:3000/recipe/5
-
-
-
-// USER PART :
-// GET METHOD(S)
-###
-GET http://localhost:3000/recipe
-###
-GET http://localhost:3000/user/1
-###
-GET http://localhost:3000/users
-Authorization: Bearer
-
-
-###
-// POST METHOD(S)
-###
-
-###
-// PUT METHOD(S)
-###
-
-###
-// DELETE METHOD(S)
-###
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsYXN0bmFtZSI6InVzZXIiLCJmaXJzdG5hbWUiOiJuYW1lIiwiaXNfYWRtaW4iOjEsImlkIjoxOSwiaWF0IjoxNjczMjAxODMyfQ.XfxIkwiPvKepreIZKbHiogvXt3mi4S2gM5WT26HvkSE

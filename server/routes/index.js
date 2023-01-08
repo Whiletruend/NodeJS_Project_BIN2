@@ -1,7 +1,6 @@
 // Variable(s)
 const { Router } = require("express");
-const User = require("../models/User");
-const Recipe = require("../models/Recipe");
+const { Recipe, User } = require("../models");
 const router = new Router(); // Create the object "router"
 const route_path = "/" ; // Which route it'll be
 
