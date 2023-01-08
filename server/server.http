@@ -1,13 +1,17 @@
-// GET METHOD(S)
+// BASE :
 ###
 GET http://localhost:3000/
+
+
+
+// RECIPE PART :
+// GET METHOD(S)
 ###
 GET http://localhost:3000/recipe
 ###
 GET http://localhost:3000/recipe/1
 ###
 GET http://localhost:3000/recipes
-
 
 // POST METHOD(S)
 ###
@@ -23,7 +27,6 @@ Content-Type: application/json
   "note": 5
 }
 ###
-
 // PUT METHOD(S)
 ###
 PUT http://localhost:3000/recipe/6
@@ -35,7 +38,31 @@ Content-Type: application/json
   "ingredients": "Baguette ou pain, beurre demi-sel ou sans, jambon (avec ou sans couenne)."
 }
 ###
-
 // DELETE METHOD(S)
 ###
 DELETE http://localhost:3000/recipe/5
+
+
+
+// USER PART :
+// GET METHOD(S)
+###
+GET http://localhost:3000/recipe
+###
+GET http://localhost:3000/user/1
+###
+GET http://localhost:3000/users
+Authorization: Bearer
+
+
+###
+// POST METHOD(S)
+###
+
+###
+// PUT METHOD(S)
+###
+
+###
+// DELETE METHOD(S)
+###

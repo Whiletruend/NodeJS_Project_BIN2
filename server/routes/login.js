@@ -3,16 +3,14 @@ const { Router } = require("express");
 const { User } = require("../models");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
-const { findOne } = require("../models/Recipe");
 
 // Variable(s)
 const router = new Router(); // Create the object "router"
-const route_path = "/login" ; // Which route it'll be
+const route_path = "/login"; // Which route it'll be
 const SECRET = process.env.JWT_SECRET || "SECRET_password";
 
-
 /*
-    Purpose: make the user log himself in a secured way
+    Purpose: Make the user log himself in a secured way
     Method: POST
 */
 router.post(route_path, async (req, res) => {
@@ -24,28 +22,25 @@ router.post(route_path, async (req, res) => {
     });
 
     // Condition(s)
-    // If the user do not exists (not found by the email)
+    // If the user do not exist (not found by the email)
     if(!user){
         res.sendStatus(401);
-    } else {
-        // If the crypted password match with the on in DB
-        if(bcrypt.compareSync(req.body.password, user.password)){
-            res.json({
-                token: jwt.sign(
-                    {
-                        lastname: user.lastname, 
-                        firstname: user.firstname,
-                        is_admin: user.is_admin,
-                        id: user.id,
-                    },
-                    SECRET
-                ),
-            });
-        }
-        // Else return 401
-        else{
-            res.sendStatus(401);
-        }
+    } else if (bcrypt.compareSync(req.body.password, user.password)) {
+        res.json({
+            token: jwt.sign(
+                {
+                    last_name: user.last_name,
+                    first_name: user.first_name,
+                    is_admin: user.is_admin,
+                    id: user.id,
+                },
+                SECRET
+            ),
+        });
+    }
+    // Else return 401
+    else {
+        res.sendStatus(401);
     }
 });
 

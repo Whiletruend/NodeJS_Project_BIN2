@@ -1,13 +1,13 @@
 // Base require(s)
-const { ValidateError } = require("sequelize");
+const { ValidationError } = require("sequelize");
 
 // Export(s)
-module.exports = function(err, req, res) {
+module.exports = function(err, req, res, next) {
     // Print error
-    console.log(err, err instanceof ValidateError);
+    console.log(err, err instanceof ValidationError);
 
     // Condition(s)
-    if (err instanceof ValidateError) {
+    if (err instanceof ValidationError) {
         // Show HTML 422 status with json infos of the err
         res.status(422).json(
             err.errors.reduce((acc, item) => {

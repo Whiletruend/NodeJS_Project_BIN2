@@ -1,6 +1,8 @@
 // Variable(s)
 const { Router } = require("express");
 const { Recipe } = require("../models");
+const checkAuth = require("../middlewares/checkAuth");
+const checkRole = require("../middlewares/checkRole");
 const router = new Router(); // Create the object "router"
 const route_path = "/recipe"; // Which route it'll be
 
@@ -50,7 +52,7 @@ router.get(route_path + "s", async (req, res) => {
     Purpose: Create a new recipe
     Method: POST
 */
-router.post(route_path, async (req, res, next) => {
+router.post(route_path, checkAuth(), checkRole(checkRole.ROLES.ADMIN), async (req, res, next) => {
     // Try - Catch
     try {
         // Variable(s)
@@ -74,7 +76,7 @@ router.post(route_path, async (req, res, next) => {
     Purpose: Update a recipe based on ID
     Method: PUT
 */
-router.put(route_path + "/:id", async (req, res, next) => {
+router.put(route_path + "/:id", checkAuth(), checkRole(checkRole.ROLES.ADMIN), async (req, res, next) => {
     // Try - Catch
     try {
         // Variable(s)
@@ -105,7 +107,7 @@ router.put(route_path + "/:id", async (req, res, next) => {
     Purpose: Delete a specific recipe based on ID
     Method: DELETE
 */
-router.delete(route_path + "/:id", async (req, res) => {
+router.delete(route_path + "/:id", checkAuth(), checkRole(checkRole.ROLES.ADMIN), async (req, res) => {
     // Variable(s)
     const id = parseInt(req.params.id);
 
