@@ -1,8 +1,8 @@
 // Variables of the roles
 
 const roles = {
-    USER: "USER",
-    ADMIN: "ADMIN",
+    USER: 0,
+    ADMIN: 1,
 };
 
 
@@ -19,7 +19,7 @@ module.exports = function (roleToCheck, options = {}) {
                 if (!user) return res.sendStatus(403);
                 console.log("SecuredFields found: " + securedFieldsFound.join(", "));
                 if (
-                    rolesHierarchy.indexOf(user.role) >=
+                    rolesHierarchy.indexOf(user.is_admin) >=
                     rolesHierarchy.indexOf(roleToCheck)
                 ) {
                     console.log("SecuredFields: user has role");
@@ -37,7 +37,7 @@ module.exports = function (roleToCheck, options = {}) {
         if (!user) return res.sendStatus(403);
         // If no securedFields, check globally the user role
         if (
-            rolesHierarchy.indexOf(user.role) >= rolesHierarchy.indexOf(roleToCheck)
+            rolesHierarchy.indexOf(user.is_admin) >= rolesHierarchy.indexOf(roleToCheck)
         ) {
             console.log("Global: user has role");
             next();
