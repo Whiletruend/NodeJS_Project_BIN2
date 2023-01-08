@@ -24,4 +24,25 @@ router.post(route_path, async (req, res) => {
         res.sendStatus(401);
     }
 
+    else{
+        if(bcrypt.compareSync(req.body.password, user.password)){
+            res.json({
+                token: jwt.sign(
+                    {
+                        lastname: user.lastname, 
+                        firstname: user.firstname,
+                        is_admin: user.is_admin,
+                        id: user.id,
+                    },
+                    SECRET
+                ),
+            });
+        }
+        else{
+            res.sendStatus(401);
+        }
+    }
+
 });
+
+module.exports = router;
