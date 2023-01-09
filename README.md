@@ -61,7 +61,7 @@ git clone https://github.com/Whiletruend/NodeJS_Project_BIN2.git
 
 ## **Avant l'utilisation du projet**
 Avant l'utilisation, vous devez disposer d'une **BDD**, le système de gestion de BDD utilisé lors du projet est **MySQL**. <br>
-Cela est possible grâce à **[XAMPP]("https://www.apachefriends.org/fr/index.html")** *(disponible sur Windows, Mac et Linux)*,  voir **[MAMP]("https://www.apachefriends.org/fr/index.html")** *(disponible sur Windows, Mac et Android 5.0+)*. <br><br>
+Cela est possible grâce à **[XAMPP](https://www.apachefriends.org/fr/index.html)** *(disponible sur Windows, Mac et Linux)*,  voir **[MAMP](https://www.apachefriends.org/fr/index.html)** *(disponible sur Windows, Mac et Android 5.0+)*. <br><br>
 Si vous disposez de cela, le fichier `nodejs_api.sql` disponible dans le dossier `server/` vous permettra de créer la base de données, les tables ainsi que les insertions <ins>nécessaires</ins> à l'utilisation de l'API.<br>
 Quant au fichier `server.http` disponible au même dossier *(`server/`)*, il vous permettra d'effectuer les requêtes en utilisant les méthodes `GET`, `POST`, `PUT` et `DELETE`.
 
