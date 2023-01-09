@@ -1,6 +1,6 @@
 create database nodejs_api;
 
---Table to manage the recipes we upload to the website.
+-- Table "recipe":
 create table nodejs_api.recipe
 (
     id               int auto_increment primary key,
@@ -12,7 +12,7 @@ create table nodejs_api.recipe
     note             int          not null
 );
 
--- Insert to fill the recipe table :
+-- Insert table "recipe":
 insert into nodejs_api.recipe (id, name, difficulty, ingredients, preparation_time, cooking_time, note)
 values  (1, 'Soupe aux légumes', 1, '1 litre de bouillon de légumes, 1 carotte, 1 courgette, 1 poivron, 1 oignon, sel, poivre', 10, 20, 4),
         (2, 'Tarte aux pommes', 3, 'Pâte brisée, 6 pommes, 30g de beurre, 60g de sucre, 1 oeuf, cannelle', 20, 40, 5),
@@ -21,7 +21,7 @@ values  (1, 'Soupe aux légumes', 1, '1 litre de bouillon de légumes, 1 carotte
         (5, 'Omelette aux tomates', 1, '2 oeufs, 2 tomates, sel, poivre', 5, 10, 4);
 
 
--- Table to manage the user accounts.
+-- Table "user":
 create table nodejs_api.user
 (
     id           int auto_increment primary key,
@@ -37,8 +37,7 @@ create table nodejs_api.user
         unique (phone_number)
 );
 
--- Insert de la table user :
-
+-- Insert table "user":
 insert into nodejs_api.user (id, last_name, first_name, is_admin, email, password, phone_number)
 values  (1, 'Bongage', 'Benjamin', 1, 'benjamin.bongage@edu.devinci.fr', 'bbongage', '0636353241'),
         (2, 'Moutima', 'Marien', 1, 'marien.moutima@edu.devinci.fr', 'skibidi', '0745856855'),
@@ -60,5 +59,39 @@ values  (1, 'Bongage', 'Benjamin', 1, 'benjamin.bongage@edu.devinci.fr', 'bbonga
         (18, 'Fournier', 'Dominique', 0, 'dominique.fournier@gmail.com', 'secret', '0612335678');
 
 
+-- Table "category":
+create table nodejs_api.category
+(
+    id     int auto_increment primary key,
+    name   varchar(255)  not null,
+    note   int default 0
+);
+
+-- Insert table "category":
+insert into nodejs_api.category (id, name, note)
+values  (1, 'Française', 5),
+        (2, 'Chinoise', 4),
+        (3, 'Italienne', 4),
+        (4, 'Japonaise', 3),
+        (5, 'Anglaise', 1);
 
 
+-- Table "category":
+create table nodejs_api.restaurant
+(
+    id           int auto_increment primary key,
+    name         varchar(255)  not null,
+    address      varchar(255)  not null,
+    cuisine_type int           not null,
+    note         int default 0 not null,
+    constraint restaurant___cuisine_type_fk
+        foreign key (cuisine_type) references nodejs_api.category (id)
+);
+
+-- Insert table "category":
+insert into nodejs_api.restaurant (id, name, address, cuisine_type, note)
+values  (1, 'Le Potager Gourmand', '12 rue des Fleurs', 1, 4),
+        (2, 'Chez Marcel', '23 avenue de la République', 3, 3),
+        (3, 'La Petite Auberge', '45 rue des arbres', 1, 5),
+        (4, 'La Cantine de la Plage', '34 boulevard de l''Océan', 5, 2),
+        (5, 'Le Palais de Jade', '56 avenue du soleil', 2, 4);
