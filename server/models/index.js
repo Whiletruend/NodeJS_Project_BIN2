@@ -5,12 +5,14 @@ const database = require("./database");
 const Recipe = require("./Recipe");
 const User = require("./User");
 const Restaurant = require("./Restaurant");
+const Category = require("./Category");
 
 // Export(s)
 module.exports = {
     database,
     Recipe,
     User,
-    Restaurant
+    Restaurant,
+    Category
 };
 

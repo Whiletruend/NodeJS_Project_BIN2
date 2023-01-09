@@ -9,7 +9,9 @@ const index_Route = require("./routes/index");
 const recipe_Route = require("./routes/recipe");
 const user_Route = require("./routes/user");
 const login_Route = require("./routes/login");
+const category_Route = require("./routes/category");
 const restaurant_Route = require("./routes/restaurant");
+
 
 // Variable(s)
 const PORT = process.env.PORT || 3000; // Default: 3000 (use the process.env.PORT else use 3000 by default)
@@ -23,6 +25,7 @@ app.use(index_Route);
 app.use(recipe_Route);
 app.use(login_Route);
 app.use(user_Route);
+app.use(category_Route);
 app.use(restaurant_Route);
 
 app.use(errorHandler);
