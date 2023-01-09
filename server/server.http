@@ -1,10 +1,15 @@
-// BASE :
+///////////
+// BASE //
+/////////
 ###
 GET http://localhost:3000/
 
 
 
-// USER PART :
+////////////////
+// USER PART //
+//////////////
+
 // GET METHOD(S)
 ###
 GET http://localhost:3000/recipe
@@ -53,7 +58,10 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsYXN0bmFtZSI6InVzZ
 
 
 
-// RECIPE PART :
+//////////////////
+// RECIPE PART //
+////////////////
+
 // GET METHOD(S)
 ###
 GET http://localhost:3000/recipe
@@ -92,4 +100,85 @@ Content-Type: application/json
 // DELETE METHOD(S)
 ###
 DELETE http://localhost:3000/recipe/5
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsYXN0bmFtZSI6InVzZXIiLCJmaXJzdG5hbWUiOiJuYW1lIiwiaXNfYWRtaW4iOjEsImlkIjoxOSwiaWF0IjoxNjczMjAxODMyfQ.XfxIkwiPvKepreIZKbHiogvXt3mi4S2gM5WT26HvkSE
+
+
+
+////////////////////
+// CATEGORY PART //
+//////////////////
+// GET METHOD(S)
+###
+GET http://localhost:3000/category
+###
+GET http://localhost:3000/category/1
+###
+GET http://localhost:3000/categories
+
+// POST METHOD(S)
+###
+POST http://localhost:3000/category
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsYXN0bmFtZSI6InVzZXIiLCJmaXJzdG5hbWUiOiJuYW1lIiwiaXNfYWRtaW4iOjEsImlkIjoxOSwiaWF0IjoxNjczMjAxODMyfQ.XfxIkwiPvKepreIZKbHiogvXt3mi4S2gM5WT26HvkSE
+Content-Type: application/json
+
+{
+  "name": "Thaï",
+  "note": 4
+}
+###
+// PUT METHOD(S)
+###
+PUT http://localhost:3000/category/6
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsYXN0bmFtZSI6InVzZXIiLCJmaXJzdG5hbWUiOiJuYW1lIiwiaXNfYWRtaW4iOjEsImlkIjoxOSwiaWF0IjoxNjczMjAxODMyfQ.XfxIkwiPvKepreIZKbHiogvXt3mi4S2gM5WT26HvkSE
+Content-Type: application/json
+
+{
+  "note": 3
+}
+###
+// DELETE METHOD(S)
+###
+DELETE http://localhost:3000/category/6
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsYXN0bmFtZSI6InVzZXIiLCJmaXJzdG5hbWUiOiJuYW1lIiwiaXNfYWRtaW4iOjEsImlkIjoxOSwiaWF0IjoxNjczMjAxODMyfQ.XfxIkwiPvKepreIZKbHiogvXt3mi4S2gM5WT26HvkSE
+
+
+
+//////////////////////
+// RESTAURANT PART //
+////////////////////
+
+// GET METHOD(S)
+###
+GET http://localhost:3000/restaurant
+###
+GET http://localhost:3000/restaurant/1
+###
+GET http://localhost:3000/restaurants
+
+// POST METHOD(S)
+###
+POST http://localhost:3000/restaurant
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsYXN0bmFtZSI6InVzZXIiLCJmaXJzdG5hbWUiOiJuYW1lIiwiaXNfYWRtaW4iOjEsImlkIjoxOSwiaWF0IjoxNjczMjAxODMyfQ.XfxIkwiPvKepreIZKbHiogvXt3mi4S2gM5WT26HvkSE
+Content-Type: application/json
+
+{
+  "name": "Le Bambou d'Orient",
+  "address": "62, rue des Tamarins",
+  "cuisine_type": 4,
+  "note": 4
+}
+###
+// PUT METHOD(S)
+###
+PUT http://localhost:3000/restaurant/6
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsYXN0bmFtZSI6InVzZXIiLCJmaXJzdG5hbWUiOiJuYW1lIiwiaXNfYWRtaW4iOjEsImlkIjoxOSwiaWF0IjoxNjczMjAxODMyfQ.XfxIkwiPvKepreIZKbHiogvXt3mi4S2gM5WT26HvkSE
+Content-Type: application/json
+
+{
+  "note": 3
+}
+###
+// DELETE METHOD(S)
+###
+DELETE http://localhost:3000/restaurant/6
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsYXN0bmFtZSI6InVzZXIiLCJmaXJzdG5hbWUiOiJuYW1lIiwiaXNfYWRtaW4iOjEsImlkIjoxOSwiaWF0IjoxNjczMjAxODMyfQ.XfxIkwiPvKepreIZKbHiogvXt3mi4S2gM5WT26HvkSE

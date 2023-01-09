@@ -36,10 +36,65 @@ Pour cela, nous avons organisé un espace de travail. Nous avons donc créer une
 
 <br>
 
+<!-- Install the project Header -->
 # 💻 **Comment installer le projet**
 
-## **Lorem Ipsum**
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur semper sit amet ligula at dapibus. Vestibulum non massa volutpat, consequat nibh et, bibendum eros. Donec ultricies est nulla, ut malesuada nunc vulputate eu. Fusce elementum lobortis nisl, a interdum magna sodales ac. Quisque eget lorem at sapien convallis vehicula id vel turpis. Vestibulum quis suscipit velit, in euismod sem. Fusce vehicula iaculis consectetur. Vivamus porta blandit lectus, eget tempor elit fringilla elementum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec cursus risus nec nisl bibendum, a vestibulum orci condimentum. Vivamus dignissim a velit eget aliquam. Integer ac quam non dui luctus aliquam id at nisl.
+<!-- Project's Part 01 Install Body -->
+## **Installation de NodeJS**
+**Pour Windows / Mac:** Téléchargez **[NodeJS](https://nodejs.org/en/)** depuis l'installeur. Pour ce projet la version **18.13.0 LTS** est utilisée. <br>
+**Pour Linux:** Installez NodeJS via les commandes suivantes: <br>
+````properties
+curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+sudo apt-get install -y nodejs
+````
+
+<!-- Project's Part 02 Install Body -->
+## **Récupération du projet GitHub**
+Récupérez ensuite le projet via **GitHub**.
+Soit, par téléchargement depuis le site, comme tel: <br>
+<img src="https://raw.githubusercontent.com/Mottie/GitHub-userscripts/master/images/github-download-zip.gif" alt="GitHub Installation" width="250" height="300"> <br>
+
+Ou bien en réalisant la commande **git clone**, comme ceci:
+````
+git clone https://github.com/Whiletruend/NodeJS_Project_BIN2.git
+````
+
+## **Avant l'utilisation du projet**
+Avant l'utilisation, vous devez disposer d'une **BDD**, le système de gestion de BDD utilisé lors du projet est **MySQL**. <br>
+Cela est possible grâce à **[XAMPP]("https://www.apachefriends.org/fr/index.html")** *(disponible sur Windows, Mac et Linux)*,  voir **[MAMP]("https://www.apachefriends.org/fr/index.html")** *(disponible sur Windows, Mac et Android 5.0+)*. <br><br>
+Si vous disposez de cela, le fichier `nodejs_api.sql` disponible dans le dossier `server/` vous permettra de créer la base de données, les tables ainsi que les insertions <ins>nécessaires</ins> à l'utilisation de l'API.<br>
+Quant au fichier `server.http` disponible au même dossier *(`server/`)*, il vous permettra d'effectuer les requêtes en utilisant les méthodes `GET`, `POST`, `PUT` et `DELETE`.
+
+> Il est possible de changer les informations de connexion à la base de données, cela se fera directement dans le fichier `database.js` disponible au chemin suivant `server/models/`. <br>
+> Les lignes qui devront être changées sont celles-ci:
+> ````js
+> const db_host = "localhost"; // Default: localhost (127.0.0.1)
+> const db_user = "root"; // Default: root
+> const db_pass = ""; // Default: N/A
+> const db_port = "3306"; // Default: 3306
+> const db_name = "nodejs_api"; // Can be changed
+> ````
+> Comme visible, les commentaires de chaque ligne vous indiquent quelle était la valeur initiale, celle par défaut. 
+
+## **Utilisation du projet**
+Une fois tout cela prêt, il vous suffira de lancer un terminal, de vous rendre dans le chemin du projet, d'accéder au dossier "server" via la commande `cd server`.<br>
+Dans le dossier, exécutez la commande: 
+```` 
+npm start
+````
+
+> Si vous relevez une erreur lors de l'exécution de cette commande qui vous indique que "**nodemon**" n'est pas installé, exécutez la commande suivante:
+> ````
+> npm install nodemon
+> ````
+
+Après cela, tout devrait fonctionner. Une fois tout le projet chargé, le texte suivant sera retourné:
+````
+Server is listening on port 3000
+Server URL: http://localhost:3000
+Executing (default): SELECT 1+1 AS result
+Sequelize:: DB Connected!
+````
 <hr>
 
 <!-- Markdown Badges Variables -->
