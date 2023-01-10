@@ -32,7 +32,7 @@ Trois principales technologies seront utilisées pour ce projet, en voici la lis
 ## **Notre idée de projet**
 Pour finir, notre projet se portera sur le thème d'un API permettant de: ***disposer d'idées de recettes, avec comment les réaliser. Ainsi qu'une liste de restaurants proposant différents types de cuisine par catégories (cuisine Française, Chinoise, etc.). Ces mêmes catégories sont listables***.
 
-Pour cela, nous avons organisé un espace de travail. Nous avons donc créé un espace "**[Space](https://www.jetbrains.com/fr-fr/space/)**" qui est un outil créé par **[JetBrains](https://www.jetbrains.com/)**. Cet outil nous permet de mettre en relation toute l'équipe, similairement à **Teams** mais en ayant des fonctionnalités supplémentaires. Il est possible depuis le navigateur ou le logiciel d'avoir accès à nos branches **git** ainsi qu'au **repo**. Ce système nous permet également de dupliquer le repo mais **localement**, ce qui permet d'avoir un petit système de **base de développement** et de **base de prod**. Le repo local est stocké sur une **VM** <u>donnée gratuitement par Space</u>, c'est pour cela que toute l'équipe a accès au repo local. Finalement, tout le monde peut développer ensemble, de ce fait il est possible que deux, trois personnes puissent intéragir sur le même fichier au même moment sans que cela ne pose de soucis. <u>Tout cela en temps réel</u>.
+Pour cela, nous avons organisé un espace de travail. Nous avons donc créer une espace "**[Space](https://www.jetbrains.com/fr-fr/space/)**" qui est un outil créé par **[JetBrains](https://www.jetbrains.com/)**. Cet outil nous permet de mettre en relation toute l'équipe, similairement à **Teams** mais en ayant des fonctionnalitées supplémentaires. Il est possible depuis le navigateur ou le logiciel d'avoir accès à nos branches **git** ainsi qu'au **repo**. Ce système nous permet également de dupliquer le repo mais **localement**, ce qui permet d'avoir un petit système de **base de développement** et de **base de prod**. Le repo local est stocké sur une **VM** <u>donnée gratuitement par Space</u>, c'est pour cela que toute l'équipe a accès au repo local. Finalement, tout le monde peut développer ensemble, de ce fait il est possible que deux, trois personnes puisse intéragir sur le même fichier au même moment sans que cela ne pose de soucis. <u>Tout cela en temps réel</u>.
 <hr>
 
 <br>
@@ -75,11 +75,11 @@ Quant au fichier `server.http` disponible au même dossier *(`server/`)*, il vou
 > const db_port = "3306"; // Default: 3306
 > const db_name = "nodejs_api"; // Can be changed
 > ````
-> Comme visible, les commentaires de chaque ligne vous indiquent quelle était la valeur initiale, celle par défaut. 
+> Comme visible, les commentaires de chaque ligne vous indiquent quelle était la valeur initiale, celle par défaut.
 
 ## **Utilisation du projet**
 Une fois tout cela prêt, il vous suffira de lancer un terminal, de vous rendre dans le chemin du projet, d'accéder au dossier "server" via la commande `cd server`.<br>
-Dans le dossier, exécutez la commande: 
+Dans le dossier, exécutez la commande:
 ```` 
 npm start
 ````
