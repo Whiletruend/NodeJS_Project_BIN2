@@ -19,6 +19,7 @@
 
 <!-- Project's Part 01 Body -->
 ## **Description du projet**
+Les participants aux projets sont: **Whiletruend** *(Benjamin B.)* ; **Miroshino** *(Ewen B.)* ; **Shxwnn** *(Marien M.)* <br>
 Le projet donné lors de notre deuxième année au sein de l'**ESILV** était de trouver une idée d'**API** *(**A**pplication **P**rogramming **I**nterface)* qui serait alors utilisée. L'objectif final de cela est de nous permettre de travailler en utilisant diverses technologiques telles que **Sequelize**, **NPM** ou bien encore le système d'authentification **JWT**.
 
 ## **Technologies utilisées**
